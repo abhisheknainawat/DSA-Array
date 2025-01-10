@@ -95,18 +95,18 @@
 
 // #include<bits/stdc++.h>
 // using namespace std;
-//  void solve(int n) {
-//     int sum = 0;
-//     for (int i = 1; i <= n; i++) {
-//       sum += i;
-//     }
-//     cout<<"The sum of the first "<<n<<" numbers is: "<<sum<<endl;
-//   }
-//  int main() {
+ void solve(int n) {
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+      sum += i;
+    }
+    cout<<"The sum of the first "<<n<<" numbers is: "<<sum<<endl;
+  }
+ int main() {
 
-//     solve(5);
-//     solve(6);
-//   }
+    solve(5);
+    solve(6);
+  }
 
 
 
@@ -116,15 +116,15 @@
 
 // #include<bits/stdc++.h>
 // using namespace std;
-// int main() {
-// 	double num1 = 1.123, num2 = 1.124;
-// 	if (num1 < num2) {
-// 		cout <<"The greatest of the two numbers is "<<num2;
-// 	}
-// 	else {
-// 		cout <<"The greatest of the two numbers is " <<num1;
-// 	}
-// }
+int main() {
+	double num1 = 1.123, num2 = 1.124;
+	if (num1 < num2) {
+		cout <<"The greatest of the two numbers is "<<num2;
+	}
+	else {
+		cout <<"The greatest of the two numbers is " <<num1;
+	}
+}
   
   
   
@@ -133,18 +133,18 @@
 //greatest of three numbers--------->   
 // #include<bits/stdc++.h>
 // using namespace std;
-// int main() {
-// 	double num1 = 1, num2 = 3, num3 = 5;
-// 	if (num1 > num2 && num1 > num3) {
-// 		cout <<"The greatest of the three numbers is "<< num1;
-// 	}
-// 	else if (num2 > num1 && num2 > num3) {
-// 		cout <<"The greatest of the three numbers is "<< num2;
-// 	}
-// 	else {
-// 		cout <<"The greatest of the three numbers is "<< num3;
-// 	}
-// }
+int main() {
+	double num1 = 1, num2 = 3, num3 = 5;
+	if (num1 > num2 && num1 > num3) {
+		cout <<"The greatest of the three numbers is "<< num1;
+	}
+	else if (num2 > num1 && num2 > num3) {
+		cout <<"The greatest of the three numbers is "<< num2;
+	}
+	else {
+		cout <<"The greatest of the three numbers is "<< num3;
+	}
+}
 
 
 
@@ -199,3 +199,6 @@ int main()
     cout<<"Sum of digits of the given number is "<<getSum(n);
     return 0;
 }
+
+
+//thats all about day 3 
