@@ -43,3 +43,32 @@ public:
         return ans;
     }
 };
+
+//leetcode 16 3sum closest
+class Solution {
+public:
+    int threeSumClosest(vector<int>& nums, int target) {
+        int diff=INT_MAX ;
+        int closest =0;
+        sort(nums.begin(), nums.end());
+        for(int i=0;i<nums.size()-1;i++){
+            int s=i+1,e=nums.size()-1;
+            while(s<e){
+                int sum=nums[i]+nums[s]+nums[e];
+                if(sum==target) sum;
+                if(abs(sum-target)<diff){
+                    diff=abs(sum-target);
+                    closest=sum;
+                }
+                if(target>sum){
+                    s++;
+
+                }else{
+                    e--;
+                }
+            }
+        }
+        return closest;
+        
+    }
+};
