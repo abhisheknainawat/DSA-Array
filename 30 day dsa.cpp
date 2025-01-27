@@ -62,3 +62,40 @@ int main() {
    reverseArray(arr, n);
    return 0;
 }
+
+
+//cont the frequency of each element
+
+#include <iostream>
+using namespace std;
+
+void frequency(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        // Skip the element if it's already been counted
+        bool counted = false;
+        for (int k = 0; k < i; k++) {
+            if (arr[i] == arr[k]) {
+                counted = true;
+                break;
+            }
+        }
+
+        if (!counted) {
+            int c = 0;
+            for (int j = 0; j < n; j++) {
+                if (arr[i] == arr[j]) {
+                    c++;
+                }
+            }
+            cout << arr[i] << " " << c << endl;
+        }
+    }
+}
+
+int main() {
+    int n = 5;
+    int arr[] = {10, 5, 15, 10, 5};
+    frequency(arr, n);
+    return 0;
+}
+
